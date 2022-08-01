@@ -7,3 +7,5 @@
 * 扫码api调用
 * 云数据库搭建
 * 数据库api调用，实现增删改查
+
+![小程序码](./miniprogram/images/ae84bb568cb350287c953c5aceeb73e.png)
