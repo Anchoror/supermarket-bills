@@ -29,9 +29,9 @@
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
-    "useMultiFrameRuntime": false,
-    "useApiHook": false,
-    "useApiHostProcess": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -51,7 +51,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
   "appid": "wx4c1b7f7ceca6dacc",
-  "projectname": "miniprogram-demo",
+  "projectname": "supermarket-bills",
   "debugOptions": {
     "hidedInDevtools": []
   },
