@@ -1,0 +1,87 @@
+<!--pages/index/index.wxml-->
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" />
+</page-meta>
+<view>
+  <view class="table" wx:for="{{formArr}}" >
+    <view class="item bigItem3">
+     {{index+1}}
+    </view>
+    <view class="item">
+      <span class="lable">品名</span>
+      <span class="content"> {{item.name}}</span>
+    </view>
+    <view class="item">
+      <span class="lable">条码</span>
+      <span class="content">{{item.code}}</span>
+    </view>
+    <view class="item bigItem1">
+      <view class="content">╳{{item.number}}</view>
+    </view>
+    <view class="item bigItem2">
+      <a bindtap="delete" data-src="{{index}}">删除</a>
+    </view>
+   <!-- <view>品名：{{item.name}}, 条码：{{item.code}}，数量{{item.number}}</view> -->
+  </view>
+</view>
+<view class="footer" >
+  <button type="primary"  plain="true" bindtap="save" wx:if="{{formArr[0]?true:false}}">保存</button>
+  <button type="primary" bindtap="popup" data-position="center">添加</button>
+</view>
+
+<page-container 
+  show="{{show}}"
+  round="{{round}}"
+  overlay="{{overlay}}"
+  duration="{{duration}}"
+  position="{{position}}"
+  close-on-slide-down="{{false}}"
+  bindbeforeenter="onBeforeEnter"
+  bindenter="onEnter"
+  bindafterenter="onAfterEnter"
+  bindbeforeleave="onBeforeLeave"
+  bindleave="onLeave"
+  bindafterleave="onAfterLeave"
+  bindclickoverlay="onClickOverlay"
+  custom-style="{{customStyle}}"
+  overlay-style="{{overlayStyle}}"
+>
+  <view class="detail-page">
+    <view wx:if='{{viewOnOff}}'>
+      <view class="container">
+        <view class="cells">
+          <view class="lable">条形码</view>
+          <view class="main">
+            <input type="number" bindinput="inputCode" value="{{inputCode}}"/>
+          </view>
+          <button class="innerBtn other" size="mini" type="primary" bindtap="scanCode" >扫码</button>
+        </view>
+        <view class="cells">
+          <view class="lable">商品名称</view>
+          <view class="main">
+            <input type="text" bindinput="inputName" id="inputName" focus="{{focus}}" value="{{inputName}}"/>
+          </view>
+        </view>
+        <view class="cells">
+          <view class="lable">数量</view>
+          <view class="main">
+            <input type="number" bindinput="inputNumber" value="{{inputNumber}}"/>
+          </view>
+        </view>
+      </view>
+      <view class="footer">
+          <button type="primary"   plain="true"  bindtap="finish">完成</button>
+          <button type="primary" bindtap="next" >下一个</button>
+      </view>
+    </view>
+    <!-- <view>
+      <text>{{nowTime}}</text>
+    </view>
+    <view>
+      <input style="float: right;" type="text"/>
+    </view>
+    <button type="primary" bindtap="exit">推出</button> -->
+  </view>
+</page-container>
+
+

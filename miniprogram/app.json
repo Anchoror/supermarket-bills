@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/uncheck/uncheck"
+  ],
+  "tabBar": {
+    
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "入库单据",
+        "iconPath": "./images/单据-修改.png",
+        "selectedIconPath":"./images/单据-修改 (1).png"
+      },
+      {
+        "pagePath": "pages/uncheck/uncheck",
+        "text": "未审核",
+        "iconPath": "./images/全部单据.png",
+        "selectedIconPath":"./images/全部单据 (1).png"
+      }
+    ]
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

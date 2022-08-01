@@ -1,0 +1,25 @@
+/* pages/uncheck/uncheck.wxss */
+
+.checkItem{
+  padding:6px;
+  font-size: 1.3em;
+}
+.checkItem .itemStyle{
+  display: grid;
+  grid-template-columns: 1fr 6fr 3fr 1fr;
+  align-items: center;
+}
+.checkItem .itemStyle a{
+  font-size: 0.8em;
+  color: rgb(85, 85, 85);
+  text-decoration: underline;
+}
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+

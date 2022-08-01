@@ -1,0 +1,18 @@
+<!--pages/uncheck/uncheck.wxml-->
+<view>
+  <checkbox-group bindchange="checkboxChange">
+    <label wx:for="{{goodsMessage}}" wx:key="{{index}}" class="checkItem">
+        <view class="itemStyle">
+          <checkbox value="{{index}}"/>
+          <text>{{item[0]}}</text>
+          <text>商品数：{{item.length -1}}</text>
+          <a catchtap="delete" data-src="{{index}}">删除</a>
+        </view>
+    </label>
+  </checkbox-group>
+</view>
+
+<view wx:if="{{existBtn}}" class="footer">
+ <button type="default" bindtap="changeAgain">修改</button>
+ <button type="primary" bindtap="upload">审核上传</button>
+</view>

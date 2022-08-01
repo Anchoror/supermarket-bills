@@ -1,0 +1,88 @@
+
+.detail-page {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 40px 40px 40px;
+  row-gap: 20px;
+}
+
+.table{
+  border: 1px solid rgb(88, 88, 88);
+  display: grid;
+  grid-template-columns:0.4fr 4fr 1fr 0.6fr;
+  justify-items: start;
+}
+.table .item{
+  width: 100%;
+  border: 1px solid rgb(207, 207, 207);
+}
+.table .bigItem1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row:1/3;
+  grid-column:3/4;
+}
+.table .bigItem2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row:1/3;
+  grid-column:4/5;
+}
+.bigItem3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row:1/3;
+  grid-column:1/2;
+}
+.table .lable{
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: rgb(88, 88, 88);
+  padding: 0 1.5em;
+}
+.table a{
+  font-size: 0.7em;
+  color: rgb(85, 85, 85);
+  text-decoration: underline;
+}
+.container{
+  width: 100%;
+  height: fit-content;
+  padding: 0 12px;
+  text-align: left;
+  overflow: hidden;
+}
+.cells{
+  width: 100%;
+  height: 2.8em;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1%;
+  font-size: 1.2em;
+}
+.cells .main{
+  flex: 1;
+}
+.cells .lable{
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 1em;
+  color: rgb(85, 85, 85);
+}
+.innerBtn{
+  width: 9em !important;
+}
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

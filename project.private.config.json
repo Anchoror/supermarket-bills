@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "uncheck",
+          "pathName": "pages/uncheck/uncheck",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
